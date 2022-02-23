@@ -122,11 +122,11 @@ title_ma = marianne %>% html_elements(".thumbnail__content--overlayed .thumbnail
 title_bfm = bfmtv %>% html_elements(".title_une_item") %>% clean_title
 title_lex = l_express %>% html_elements(".thumbnail--une .headline--lg") %>% clean_title
 title_lp = le_point %>% html_elements(".art-full h2") %>% clean_title
-title_va = valeurs_actuelles %>% html_elements(".b-posts:nth-child(2) .card-post--featured-no-body a") %>% clean_title
+title_va = valeurs_actuelles %>% html_elements(".card-post--featured .h3 a") %>% clean_title
 title_lib = liberation %>% html_elements(".font_normal") %>% clean_title
 
 #Writing main titles to csv
-headers = c(title_lm, title_fig, title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va, title_lib[3])
+headers = c(title_lm, title_fig, title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[3])
 name = c("Le_Monde", "Le_Figaro", "C_News", "20_minutes", "Les_Echos", "France_Info", "Le_Nouvel_Obs", "L_Express", "BFM_TV", "Marianne", "La_Croix", "Le_Point", "Valeurs_Actuelles", "Liberation")
 num_articles_head = length(headers)
 date_headers <- rep(today, num_articles_head)
