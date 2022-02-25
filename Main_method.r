@@ -111,13 +111,13 @@ write.table(cbind(date_lib,titles_lib), file="liberation.csv", sep=";", dec=",",
 
 # Processing main titles 
 title_lm = le_monde %>% html_elements(".article--main .article__title-label") %>% clean_title
-title_fig = le_figaro %>% html_elements(".fig-profile--first .fig-premium-mark") %>% clean_title
-title_cn = c_news %>% html_elements(".dm-blocks-news-hero.associated-video .dm-news-title") %>% clean_title
+title_fig = le_figaro %>% html_elements(".fig-event-une__headline") %>% clean_title
+title_cn = c_news %>% html_elements(".dm-hp-full-alert-title") %>% clean_title
 title_20min = vingt_minutes %>% html_elements(".preview-cover .teaser-title") %>% clean_title
 title_le = les_echos %>% html_elements(".kXSjxr") %>% clean_title
 title_fi = france_info %>% html_elements(".h1") %>% clean_title
 title_no = nouvel_obs %>% html_elements(".article-box-title") %>% clean_title
-title_lc = la_croix %>% html_elements(".block-item__title--border .tag-subscriber") %>% clean_title
+title_lc = la_croix %>% html_elements("h1") %>% clean_title
 title_ma = marianne %>% html_elements(".thumbnail__content--overlayed .thumbnail__link") %>% clean_title
 title_bfm = bfmtv %>% html_elements(".title_une_item") %>% clean_title
 title_lex = l_express %>% html_elements(".thumbnail--une .headline--lg") %>% clean_title
@@ -126,7 +126,7 @@ title_va = valeurs_actuelles %>% html_elements(".card-post--featured .h3 a") %>%
 title_lib = liberation %>% html_elements(".font_normal") %>% clean_title
 
 #Writing main titles to csv
-headers = c(title_lm, title_fig, title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[3])
+headers = c(title_lm, title_fig, title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[1])
 name = c("Le_Monde", "Le_Figaro", "C_News", "20_minutes", "Les_Echos", "France_Info", "Le_Nouvel_Obs", "L_Express", "BFM_TV", "Marianne", "La_Croix", "Le_Point", "Valeurs_Actuelles", "Liberation")
 num_articles_head = length(headers)
 date_headers <- rep(today, num_articles_head)
