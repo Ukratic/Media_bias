@@ -1,4 +1,5 @@
 library(rvest)
+library(stringr)
 
 # Variables for the main page of each journal
 le_monde = read_html("https://www.lemonde.fr/")
@@ -20,9 +21,9 @@ liberation = read_html("https://www.liberation.fr/")
 theday = Sys.Date()
 today = toString(theday)
 
-# Function to remove html tags
+# Function to remove html tags and unruly spaces and returns
 clean_title = function(htmlString) {
-  return(gsub("<.*?>", "", htmlString))
+  return(str_squish(gsub("<.*?>", "", htmlString)))
 }
 
 # Titles for Le Monde
@@ -134,7 +135,6 @@ write.table(cbind(date_headers,name,headers), file="headers.csv", sep=";", dec="
 
 #Check consistency
 
-#One file for all journals in one given day
 name_lm <- rep("Le Monde", num_articles_lm)
 name_fig <- rep("Le Figaro", num_articles_fig)
 name_cn <- rep("C News", num_articles_cn)
