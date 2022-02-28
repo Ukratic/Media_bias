@@ -133,8 +133,8 @@ num_articles_head = length(headers)
 date_headers <- rep(today, num_articles_head)
 write.table(cbind(date_headers,name,headers), file="headers.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
 
-#Check consistency
 
+#One-day file
 name_lm <- rep("Le Monde", num_articles_lm)
 name_fig <- rep("Le Figaro", num_articles_fig)
 name_cn <- rep("C News", num_articles_cn)
@@ -163,3 +163,22 @@ write.table(cbind(name_lex,titles_lex), file=paste ("all_titles_", today, ".csv"
 write.table(cbind(name_lp,titles_lp), file=paste ("all_titles_", today, ".csv", sep=""), sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
 write.table(cbind(name_va,titles_va), file=paste ("all_titles_", today, ".csv", sep=""), sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
 write.table(cbind(name_lib,titles_lib), file=paste ("all_titles_", today, ".csv", sep=""), sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+
+
+#Big file, all journals all dates
+write.table(cbind(today,name_lm,titles_lm), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_fig,titles_fig), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_cn,titles_cn), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_20min,titles_20min), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_le,titles_le), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_fi,titles_fi), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_no,titles_no), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_lc,titles_lc), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_ma,titles_ma), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_bfm,titles_bfm), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_lex,titles_lex), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_lp,titles_lp), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_va,titles_va), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+write.table(cbind(today,name_lib,titles_lib), file="full.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
+
+#Check consistency
