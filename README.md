@@ -36,7 +36,7 @@ https://www.bfmtv.com/
 
 https://www.lexpress.fr/
 
-"https://www.lepoint.fr/
+https://www.lepoint.fr/
 
 https://www.valeursactuelles.com/
 
