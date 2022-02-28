@@ -8,7 +8,8 @@ Mostly cleaned with regex, some spaces and slashes may remain.
 **OUTPUT :** 
 - 1 headers file (all dates)
 - 14 files for each journal (all dates)
-- 1 file (per day) for all journals
+- 1 file per day for all journals
+- 1 big file with everything (all dates)
 
 <br><br>
 
@@ -41,3 +42,15 @@ https://www.lepoint.fr/
 https://www.valeursactuelles.com/
 
 https://www.liberation.fr/ 
+
+<br><br>
+Orientation politique :
+- Centre libéral : **BFM TV**, L'Express, Le Point, Les Echos, **20 minutes**
+- Centre conservateur : La Croix, Marianne
+- Gauche : Libération, **Le Monde**, Nouvel Obs,
+- Centre gauche : **France Info**
+- Droite : **Le Figaro**, **C News**
+- Extrême droite : Valeurs Actuelles
+
+<br>
+En gras: audiences les plus importantes
