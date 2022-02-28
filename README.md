@@ -46,13 +46,14 @@ https://www.valeursactuelles.com/
 https://www.liberation.fr/ 
 
 <br><br>
-Orientation politique :
-- Centre libéral : **BFM TV**, L'Express, Le Point, Les Echos, **20 minutes**
-- Centre conservateur : La Croix, Marianne
-- Gauche : Libération, **Le Monde**, Nouvel Obs,
-- Centre gauche : **France Info**
-- Droite : **Le Figaro**, **C News**
-- Extrême droite : Valeurs Actuelles
+Political compass :
+- Liberal center : **BFM TV**, L'Express, Le Point, Les Echos, **20 minutes**
+- Conservative center : La Croix, Marianne
+- Left : **Le Monde**, Nouvel Obs
+- Center Left : **France Info**
+- Right : **Le Figaro**, **C News**
+- Hard Right : Valeurs Actuelles
+- Hard Left : Libération
 
 <br>
-En gras: audiences les plus importantes
+In bold: main media
