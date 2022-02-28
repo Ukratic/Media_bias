@@ -7,9 +7,11 @@ Mostly cleaned with regex, some spaces and slashes may remain.
 
 **OUTPUT :** 
 - 1 headers file (all dates)
+- 1 big file with every title (all dates)
+
+Also, for alternative use of data :
 - 14 files for each journal (all dates)
 - 1 file per day for all journals
-- 1 big file with everything (all dates)
 
 <br><br>
 
