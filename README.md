@@ -9,7 +9,7 @@ Mostly cleaned with regex, some spaces and slashes may remain.
 - 1 headers file (all dates)
 - 1 big file with every title (all dates)
 
-Also, for alternative use of data :
+Also, for alternative use and storage of data (in case of unnoticed change in one of the websites for instance) :
 - 14 files for each journal (all dates)
 - 1 file per day for all journals
 
