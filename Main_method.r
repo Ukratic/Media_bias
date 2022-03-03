@@ -112,7 +112,7 @@ write.table(cbind(date_lib,titles_lib), file="liberation.csv", sep=";", dec=",",
 
 # Processing main titles 
 title_lm = le_monde %>% html_elements(".article--main .article__title-label") %>% clean_title
-title_fig = le_figaro %>% html_elements(".fig-event-une__headline") %>% clean_title
+title_fig = le_figaro %>% html_elements(".fig-profile--first .fig-premium-mark") %>% clean_title
 title_cn = c_news %>% html_elements(".dm-hp-full-alert-title") %>% clean_title
 title_20min = vingt_minutes %>% html_elements(".preview-cover .teaser-title") %>% clean_title
 title_le = les_echos %>% html_elements(".kXSjxr") %>% clean_title
