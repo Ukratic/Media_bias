@@ -45,15 +45,17 @@ https://www.valeursactuelles.com/
 
 https://www.liberation.fr/ 
 
+https://www.humanite.fr/
+
 <br><br>
 Political compass :
 - Liberal center : **BFM TV**, L'Express, Le Point, Les Echos, **20 minutes**
 - Conservative center : La Croix, Marianne
-- Left : **Le Monde**, Nouvel Obs
+- Left : **Le Monde**, Nouvel Obs, Libération
 - Center Left : **France Info**
 - Right : **Le Figaro**, **C News**
 - Hard Right : Valeurs Actuelles
-- Hard Left : Libération
+- Hard Left : L'Humanité
 
 <br>
 In bold: main media
