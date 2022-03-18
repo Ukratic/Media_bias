@@ -49,7 +49,7 @@ write.table(cbind(date_cn,titles_cn), file="c_news.csv", sep=";", dec=",", row.n
 # Titles for 20 Minutes
 titles_20min = vingt_minutes %>% html_elements(".teaser-title") %>% clean_title
 num_articles_20min = length(titles_20min)
-date_20min <- rep(today, num_articles_20min)
+date_20min = rep(today, num_articles_20min)
 write.table(cbind(date_20min,titles_20min), file="20_minutes.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
 
 # Titles for Les Echos
@@ -120,7 +120,7 @@ write.table(cbind(date_hum,titles_hum), file="humanite.csv", sep=";", dec=",", r
 
 # Processing main titles 
 title_lm = le_monde %>% html_elements(".article--main .article__title-label") %>% clean_title
-title_fig = le_figaro %>% html_elements(".fig-ensemble--first .fig-ensemble__title--photo") %>% clean_title
+# title_fig = le_figaro %>% html_elements(".fig-premium-mark") %>% clean_title
 title_cn = c_news %>% html_elements(".dm-hp-full-alert-title") %>% clean_title
 title_20min = vingt_minutes %>% html_elements(".preview-cover .teaser-title") %>% clean_title
 title_le = les_echos %>% html_elements(".kXSjxr") %>% clean_title
@@ -136,7 +136,7 @@ title_lib = liberation %>% html_elements(".font_normal") %>% clean_title
 title_hum = humanite %>% html_elements(".view-mode-media_big_type_title_desc_tall .field-name-title a") %>% clean_title
 
 #Writing main titles to csv
-headers = c(title_lm, title_fig, title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[1], title_hum[1])
+headers = c(title_lm, titles_fig[1], title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[1], title_hum[1])
 name = c("Le Monde", "Le Figaro", "C News", "20 minutes", "Les Echos", "France Info", "Nouvel Obs", "L'Express", "BFM TV", "Marianne", "La Croix", "Le Point", "Valeurs Actuelles", "Libération", "L'Humanité")
 num_articles_head = length(headers)
 date_headers <- rep(today, num_articles_head)
