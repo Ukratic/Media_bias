@@ -128,7 +128,7 @@ title_fi = france_info %>% html_elements(".h1") %>% clean_title
 title_no = nouvel_obs %>% html_elements(".article-box-title") %>% clean_title
 title_lc = la_croix %>% html_elements("h1") %>% clean_title
 title_ma = marianne %>% html_elements(".thumbnail__content--overlayed .thumbnail__link") %>% clean_title
-title_bfm = bfmtv %>% html_elements(".title_une_item") %>% clean_title
+title_bfm = bfmtv %>% html_elements(".megamax_title") %>% clean_title
 title_lex = l_express %>% html_elements(".thumbnail--une .headline--lg") %>% clean_title
 title_lp = le_point %>% html_elements(".art-full h2") %>% clean_title
 title_va = valeurs_actuelles %>% html_elements(".card-post--featured .h3 a") %>% clean_title
@@ -136,7 +136,7 @@ title_lib = liberation %>% html_elements(".font_normal") %>% clean_title
 title_hum = humanite %>% html_elements(".view-mode-media_big_type_title_desc_tall .field-name-title a") %>% clean_title
 
 #Writing main titles to csv
-headers = c(title_lm, titles_fig[1], title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[1], title_hum[1])
+headers = c(title_lm, titles_fig[1], title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[3], title_hum[1])
 name = c("Le Monde", "Le Figaro", "C News", "20 minutes", "Les Echos", "France Info", "Nouvel Obs", "L'Express", "BFM TV", "Marianne", "La Croix", "Le Point", "Valeurs Actuelles", "Libération", "L'Humanité")
 num_articles_head = length(headers)
 date_headers <- rep(today, num_articles_head)
