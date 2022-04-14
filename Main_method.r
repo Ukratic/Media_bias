@@ -120,7 +120,7 @@ write.table(cbind(date_hum,titles_hum), file="humanite.csv", sep=";", dec=",", r
 
 # Processing main titles 
 title_lm = le_monde %>% html_elements(".article--main .article__title-label") %>% clean_title
-# title_fig = le_figaro %>% html_elements(".fig-premium-mark") %>% clean_title
+title_fig = le_figaro %>% html_elements(".fig-premium-mark") %>% clean_title
 title_cn = c_news %>% html_elements(".dm-hp-full-alert-title") %>% clean_title
 title_20min = vingt_minutes %>% html_elements(".preview-cover .teaser-title") %>% clean_title
 title_le = les_echos %>% html_elements(".kXSjxr") %>% clean_title
@@ -128,7 +128,7 @@ title_fi = france_info %>% html_elements(".h1") %>% clean_title
 title_no = nouvel_obs %>% html_elements(".article-box-title") %>% clean_title
 title_lc = la_croix %>% html_elements("h1") %>% clean_title
 title_ma = marianne %>% html_elements(".thumbnail__content--overlayed .thumbnail__link") %>% clean_title
-title_bfm = bfmtv %>% html_elements(".megamax_title") %>% clean_title
+title_bfm = bfmtv %>% html_elements(".title_une_item") %>% clean_title
 title_lex = l_express %>% html_elements(".thumbnail--une .headline--lg") %>% clean_title
 title_lp = le_point %>% html_elements(".art-full h2") %>% clean_title
 title_va = valeurs_actuelles %>% html_elements(".card-post--featured .h3 a") %>% clean_title
