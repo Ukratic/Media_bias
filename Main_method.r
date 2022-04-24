@@ -119,16 +119,16 @@ date_hum = rep(today, num_articles_hum)
 write.table(cbind(date_hum,titles_hum), file="humanite.csv", sep=";", dec=",", row.names=F,append=TRUE, col.names=F)
 
 # Processing main titles 
-title_lm = le_monde %>% html_elements(".article--main .article__title-label") %>% clean_title
-title_fig = le_figaro %>% html_elements(".fig-premium-mark") %>% clean_title
+title_lm = le_monde %>% html_elements(".homepage__big-title-link") %>% clean_title
+title_fig = le_figaro %>% html_elements(".fig-event-une__headline") %>% clean_title
 title_cn = c_news %>% html_elements(".dm-hp-full-alert-title") %>% clean_title
 title_20min = vingt_minutes %>% html_elements(".preview-cover .teaser-title") %>% clean_title
 title_le = les_echos %>% html_elements(".kXSjxr") %>% clean_title
 title_fi = france_info %>% html_elements(".h1") %>% clean_title
-title_no = nouvel_obs %>% html_elements(".article-box-title") %>% clean_title
+title_no = nouvel_obs %>% html_elements(".on-live .article-box-content__title") %>% clean_title
 title_lc = la_croix %>% html_elements("h1") %>% clean_title
 title_ma = marianne %>% html_elements(".thumbnail__content--overlayed .thumbnail__link") %>% clean_title
-title_bfm = bfmtv %>% html_elements(".title_une_item") %>% clean_title
+title_bfm = bfmtv %>% html_elements(".megamax_title") %>% clean_title
 title_lex = l_express %>% html_elements(".thumbnail--une .headline--lg") %>% clean_title
 title_lp = le_point %>% html_elements(".art-full h2") %>% clean_title
 title_va = valeurs_actuelles %>% html_elements(".card-post--featured .h3 a") %>% clean_title
@@ -136,7 +136,7 @@ title_lib = liberation %>% html_elements(".font_normal") %>% clean_title
 title_hum = humanite %>% html_elements(".view-mode-media_big_type_title_desc_tall .field-name-title a") %>% clean_title
 
 #Writing main titles to csv
-headers = c(title_lm, titles_fig[1], title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[3], title_hum[1])
+headers = c(title_lm, title_fig, title_cn, title_20min, title_le, title_fi, title_no, title_lex, title_bfm, title_ma, title_lc, title_lp[1], title_va[1], title_lib[1], title_hum[1])
 name = c("Le Monde", "Le Figaro", "C News", "20 minutes", "Les Echos", "France Info", "Nouvel Obs", "L'Express", "BFM TV", "Marianne", "La Croix", "Le Point", "Valeurs Actuelles", "Libération", "L'Humanité")
 num_articles_head = length(headers)
 date_headers <- rep(today, num_articles_head)
