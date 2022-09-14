@@ -2,6 +2,8 @@
 Webscrape using Rvest to gather titles daily from 14 french news sites.
 
 Mostly cleaned with regex, some spaces and slashes may remain.
+
+**WARNING** News sites often make changes to their architecture (news cycle, big headline, overhaul...). Check HTML tags.
 <br><br>
 **OUTPUT :** 
 - 1 headers file (all dates)
