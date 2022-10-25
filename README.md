@@ -1,5 +1,5 @@
 # News_scraper
-Webscrape using Rvest to gather titles daily from 14 french news sites.
+Webscrape using Rvest to gather titles daily from 15 french news sites.
 
 Mostly cleaned with regex, some spaces and slashes may remain.
 
@@ -10,8 +10,8 @@ Mostly cleaned with regex, some spaces and slashes may remain.
 - 1 big file with every title (all dates)
 
 Also, for alternative use and storage of data (in case of unnoticed change in one of the websites for instance) :
-- 14 files for each journal (all dates)
-- 1 file per day for all journals
+- 15 files for each journal (all dates) (backup)
+- 1 file per day for all journals (backup)
 <br><br>
 _Selected journals :_
 - [Le Monde](https://www.lemonde.fr/)
