@@ -1,9 +1,10 @@
 # Media Bias
 
-## 1. News scraper
-## 2. Topic modeling (pending)
-## 3. Clustering & Classification (pending)
-## 4. Prediction & Analysis (pending)
+## Structure
+1. News scraper
+2. Topic modeling (pending)
+3. Clustering & Classification (pending)
+4. Prediction & Analysis (pending)
 
 
 ## 1.News scraper
