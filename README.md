@@ -1,4 +1,12 @@
-# News_scraper
+# Media Bias
+
+## 1. News scraper
+## 2. Topic modeling (pending)
+## 3. Clustering & Classification (pending)
+## 4. Prediction & Analysis (pending)
+
+
+## 1.News scraper
 Webscrape using Rvest to gather titles daily from 15 french news sites.
 
 Mostly cleaned with regex, some spaces and slashes may remain.
