@@ -23,7 +23,7 @@ clean_title = function(htmlString) {
 titles_lm = le_monde %>% html_elements(".article__title") %>% clean_title
 num_articles_lm = length(titles_lm)
 title_lm = le_monde %>% html_elements(".article__title-label") %>% clean_title
-r```
+```
 
 <br>
 
@@ -32,6 +32,7 @@ r```
 - 1 big file with every title (all dates)
 
 <br>
+
 _Selected journals :_
 - [Le Monde](https://www.lemonde.fr/)
 - [Le Figaro](https://www.lefigaro.fr/)
