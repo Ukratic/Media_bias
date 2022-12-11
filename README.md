@@ -10,9 +10,10 @@
 
 ## 1.News scraper
 Webscrape using Rvest to gather titles daily from 15 french news sites.<br>
+**WARNING**: News sites often make changes to their architecture (news cycle, big headline, overhaul...).<br>
+Check HTML & CSS tags before use.<br>
 Mostly cleaned with regex, some spaces and slashes may remain.<br>
-**WARNING** News sites often make changes to their architecture (news cycle, big headline, overhaul...). Check HTML tags.
-<br>
+
 ```r
 # Function to remove html tags, unruly spaces and returns
 clean_title = function(htmlString) {
@@ -77,6 +78,8 @@ There are very clearly some outstanding themes and recurrent words in the data.
 For understanding and coherence, one of the goals will be to explain topic distribution using the same framework.<br>
 Short notebook for this plot in *ina_topics* folder.<br>
 <img src="https://github.com/Ukratic/Media_bias/blob/main/images/ina_topics.png" alt="INA topics" width="800" height="400"/>
+
+Full hierarchical BERT topic modeling in *images* folder (too large to meaningfully display here).
 
 ## 3. Classification
 - Plot dynamic topic distribution
