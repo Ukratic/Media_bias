@@ -64,7 +64,7 @@ In bold: main media
 
 
 ## 2. Preprocessing & clustering
-There are very clearly some outstanding themes and recurrent words in our data.
+There are very clearly some outstanding themes and recurrent words in the data.
 <img src="https://github.com/Ukratic/Media_bias/blob/main/images/wcloud.png" alt="Wcloud" width="800" height="400"/>
 
 
