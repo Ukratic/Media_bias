@@ -2,9 +2,9 @@
 
 ## Structure
 1. News scraper
-2. Topic modeling (work in progress)
-3. Clustering & Classification (pending)
-4. Prediction & Analysis (pending)
+2. Preprocessing & Modeling
+3. Dynamic distribution & Classification (work in progress)
+4. Prediction & Analysis (work in progress)
 5. Dashboard (pending)
 
 
@@ -62,7 +62,24 @@ Political compass :
 <br>
 In bold: main media
 
-## 2.Topic modeling
-Determine topic distribution using spacy (stopwords, lemmatize), Latent Dirichlet Allocation and BERTopic (exploring topics).<br>
 
-TO DO : Check hierarchical and guided topic modeling, then choose best approach
+## 2. Preprocessing & clustering
+There are very clearly some outstanding themes and recurrent words in our data.
+<img src="https://github.com/Ukratic/Media_bias/blob/main/images/wcloud.png" alt="Wcloud" width="800" height="400"/>
+
+
+**Steps:**
+- Cleaning articles and lemmatization using spacy (and removing stopwords)
+- Vectorizing into n-grams and checking topic distribution with Latent Dirichlet Allocation
+- Hierarchical and guided topic modeling with BERTopic
+
+<a href="https://www.ina.fr/">INA</a>'s themes in french tv news are comprised of 14 topics.<br>
+For understanding and coherence, one of the goals will be to explain topic distribution using the same framework.<br>
+Short notebook for this plot in *ina_topics* folder.<br>
+<img src="https://github.com/Ukratic/Media_bias/blob/main/images/ina_topics.png" alt="INA topics" width="800" height="400"/>
+
+## 3. Classification
+- Plot dynamic topic distribution
+- Merge topics into something more readable & practical
+
+*Work in progress*
