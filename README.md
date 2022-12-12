@@ -2,10 +2,11 @@
 
 ## Structure
 1. News scraper
-2. Preprocessing & Modeling
-3. Dynamic distribution & Classification (work in progress)
-4. Prediction & Analysis (work in progress)
+2. Preprocessing & clustering
+3. Classification & dynamic distribution (work in progress)
+4. Analysis & political score (work in progress)
 5. Dashboard (pending)
+6. Training a new BERT model (pending)
 
 
 ## 1.News scraper
@@ -81,7 +82,7 @@ Short notebook for this plot in *ina_topics* folder.<br>
 
 Full hierarchical BERT topic modeling in *images* folder (too large to meaningfully display here).
 
-## 3. Classification
+## 3. Classification & dynamic distribution
 - Plot dynamic topic distribution
 - Merge topics into something more readable & practical
 
