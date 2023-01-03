@@ -64,6 +64,9 @@ Political compass :
 <br>
 In bold: main media
 
+Why scrape in R, you may ask, when the rest of the project is in Python ? No particular reason really, I was just coding in R at the time !<br>
+If you want to scrape your own data and don't know R, the code can easily be adapted into Python using requests, beautifulsoup and pandas.
+
 
 ## 2. Preprocessing & clustering
 There are very clearly some outstanding themes and recurrent words in the data.
@@ -83,7 +86,16 @@ Short notebook for this plot in *ina_topics* folder.<br>
 Full hierarchical BERT topic modeling in *images* folder (too large to meaningfully display here).
 
 ## 3. Classification & dynamic distribution
-- Plot dynamic topic distribution
-- Merge topics into something more readable & practical
-
 *Work in progress*
+
+- Plot dynamic topic distribution
+- Merge topics into something more readable & practical *current task*
+- Check labels and vocabulary consistency
+
+
+## 4. Analysis & political score
+*Work in progress* : Graphs & exploration of bias.
+## 5. Dashboard
+*pending* : Presentation of process and analysis results.
+## 6. Training a new BERT model
+*pending* : Use the newly labeled data to train a sentiment analysis model on french news articles.
