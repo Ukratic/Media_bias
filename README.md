@@ -92,6 +92,13 @@ Full hierarchical BERT topic modeling in *images* folder (too large to meaningfu
 - Check labels and vocabulary consistency
 <img src="https://github.com/Ukratic/Media_bias/blob/main/images/distrib.png" alt="Dynamic Distribution of topics" width="800" height="400"/>
 
+Most journals clearly have more articles around April 10th and 24th : the 1st and 2nd round of the french presidential elections.<br>
+The topic of French Politics is almost always at the top in this period, though International news (mostly about Ukraine) take the lead in February and March for some journals.
+
+<img src="https://github.com/Ukratic/Media_bias/blob/main/images/avg_topics.png" alt="Daily average topics" width="800" height="400"/>
+
+All journals have a roughly similar distribution of topics, with the notable but unsurprising exception of Les Echos (a financial journal first and foremost).
+ 
 ## 4. Analysis & political score
 *Work in progress* : Graphs & exploration of bias. *current task : January/February 2022*
 ## 5. Dashboard
