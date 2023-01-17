@@ -3,7 +3,7 @@
 ## Structure
 1. News scraper
 2. Preprocessing & clustering
-3. Classification & dynamic distribution (work in progress)
+3. Classification & dynamic distribution
 4. Analysis & political score (work in progress)
 5. Dashboard (pending)
 6. Training a new BERT model (pending)
@@ -86,16 +86,18 @@ Short notebook for this plot in *ina_topics* folder.<br>
 Full hierarchical BERT topic modeling in *images* folder (too large to meaningfully display here).
 
 ## 3. Classification & dynamic distribution
-*Work in progress*
 
 - Plot dynamic topic distribution
-- Merge topics into something more readable & practical *current task*
+- Merge topics into something more readable & practical 
 - Check labels and vocabulary consistency
-
+<img src="https://github.com/Ukratic/Media_bias/blob/main/images/distrib.png" alt="Dynamic Distribution of topics" width="800" height="400"/>
 
 ## 4. Analysis & political score
-*Work in progress* : Graphs & exploration of bias.
+*Work in progress* : Graphs & exploration of bias. *current task : January/February 2022*
 ## 5. Dashboard
-*pending* : Presentation of process and analysis results.
+*pending* : Presentation of process and results of analysis.
 ## 6. Training a new BERT model
-*pending* : Use the newly labeled data to train a sentiment analysis model on french news articles.
+*pending* <br>
+a) Use the newly labeled data to train a classification model on topics of french news articles.
+b) Use the newly labeled data to train a sentiment analysis model on bias in french news articles.
+c) Use both models on a new dataset of french news articles
