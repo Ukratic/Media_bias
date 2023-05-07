@@ -4,13 +4,12 @@
 1. News scraper
 2. Preprocessing & clustering
 3. Classification & dynamic distribution
-4. Analysis & political score (work in progress)
-5. Dashboard (pending)
-6. Training a new BERT model (pending)
+4. Analysis & political score (pending)
+5. Training a new BERT model (pending)
 
 
 ## 1.News scraper
-Webscrape using Rvest to gather titles daily from 15 french news sites.<br>
+Webscrape using Rvest to gather titles daily from 15 French news sites.<br>
 **WARNING**: News sites often make changes to their architecture (news cycle, big headline, overhaul...).<br>
 Check HTML & CSS tags before use.<br>
 Mostly cleaned with regex, some spaces and slashes may remain.<br>
@@ -92,7 +91,7 @@ Full hierarchical BERT topic modeling in *images* folder (too large to meaningfu
 - Check labels and vocabulary consistency
 <img src="https://github.com/Ukratic/Media_bias/blob/main/images/distrib.png" alt="Dynamic Distribution of topics" width="800" height="400"/>
 
-Most journals clearly have more articles around April 10th and 24th : the 1st and 2nd round of the french presidential elections.<br>
+Most journals clearly have more articles on French Politics around April 10th and 24th : the 1st and 2nd round of the French presidential elections.<br>
 The topic of French Politics is almost always at the top in this period, though International news (mostly about Ukraine) take the lead in February and March for some journals.
 
 <img src="https://github.com/Ukratic/Media_bias/blob/main/images/avg_topics.png" alt="Daily average topics" width="800" height="400"/>
@@ -100,11 +99,11 @@ The topic of French Politics is almost always at the top in this period, though 
 All journals have a roughly similar distribution of topics, with the notable but unsurprising exception of Les Echos (a financial journal first and foremost).
  
 ## 4. Analysis & political score
-*Work in progress* : Graphs & exploration of bias. *current task : January/February 2022*
-## 5. Dashboard
-*pending* : Presentation of process and results of analysis.
-## 6. Training a new BERT model
+*pending* 
+Graphs & exploration of bias.
+
+## 5. Training a new BERT model
 *pending* <br>
-a) Use the newly labeled data to train a classification model on topics of french news articles.
-b) Use the newly labeled data to train a sentiment analysis model on bias in french news articles.
+a) Use the newly labeled data to train a classification model on topics of french news articles.<br>
+b) Use the newly labeled data to train a sentiment analysis model on bias in french news articles.<br>
 c) Use both models on a new dataset of french news articles
